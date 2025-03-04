@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name = "viewpoint" content="wedth=device-width, inital-scale=1.0">
+		<title>Personal Portfolio Website</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/362ebf1a34.js" crossorigin="anonymous"></script>
+    </head>
+	<body>
+	<div id="header">
+        <div class="container">
+            <nav>
+              <img src="images/port_logo.png" style="width: 200px; height: 200px;" class="logo"> <!----comment need to add logo image----> 
+                <ul id="sidemenu">
+                    <!--<li><a href="#" style="display: block; color: rgb(0, 0, 0);"><b>Home</b></a></li> -->
+                    <li><a href="#header"><b>Home</b></a></li> 
+                    <li><a href="#About"><b>About</b></a></li>
+                    <li><a href="#services"><b>Services</b></a></li>
+                    <li><a href="#portfolio"><b>Portfolio</b></a></li>
+                    <li><a href="#contact"><b>Contact</b></a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i> 
+            </nav>
+        <div class="header-text">
+            <p> PL/SQL Developer</p>
+            <h1> Hi, I'm <span>Raj Kumar</span><br>From Bangalore</h1> 
+        </div>
+    </div>
+    <!--------------------------About------------------>
+<div id="About">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/img_about.jpeg" alt="About Image" style="width: 450px; height: 550px;">
+  <!--need to check this image issues-->
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p> SQL & PL/SQL Developer with 4+ years of experience Developing new Database objects, preparing analytic reports, and maintaining the scheduled Jobs.
+                    Possess a Masters in Computers. In Computers and expertise in DB Development. Looking to leverage my knowledge and experience into a role as PL SQL Developer.
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experiance')">Experiance</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Data Manipulating</span><br>Using DML Statements</li>
+                        <li><span>Data Migration</span><br>From one DB to Another DB</li>
+                        <li><span>DataBase Development</span><br>Creating DB objects (Procedures,Functions,Triggers,Indexes etc)</li>
+                        <li><span>Query Tuning</span><br>Query Optimizations Techniques</li>
+                        <li><span>Job Scheduling</span><br>Oracle Predefined Packages or Control-M Tool</li>
+                        <li><span>Repository Tools</span><br>SVN, GitHub, BitBucket</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experiance">
+                    <ul>
+                        <li><span>Duration : 18/Nov/2024 - 24/Feb/2025</span><br>Client : Block Stack Pvt Ltd<br>Payrole : Block Stack Pvt Ltd<br>Designation : System Engineer</li>
+                        <li><span>Duration : 15/Sep/2022 - 16/Sep/2024</span><br>Client : Flipkart<br>Payrole : Collabera Digital<br>Designation : SQL Developer</li>
+                        <li><span>Duration : 25/Apr/2022 - 13/Jul/2022</span><br>Client : Azentio<br>Payrole : Conneqt Digital (Quess Corp Limited)<br>Designation : Digital Engineer - Operations</li>
+                        <li><span>Duration : 23/Nov/2020 - 23/Mar/2022</span><br>Client : Wipro Technologies<br>Payrole : Hirexa Solutions<br>Designation : Database Developer</li>
+                        <li><span>Duration : 26/Jul/2018 - 27/Jul/2019</span><br>Client : Conduent Business solutions<br>Payrole : Conduent Business solutions<br>Designation : Database Developer</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2018</span><br>Master's in Computer Science at Dr L Bullayya College, Visakhapatnam.</li>
+                        <li><span>2016</span><br>Bachelor's in Computer Science at Dr L Bullayya College, Visakhapatnam.</li>
+                        <li><span>2013</span><br>Intermediate (+2) at Dr V.S Krishna Govt Jn college, Visakhapatnam.</li>
+                        <li><span>2011</span><br>Matriculation (SSc) at Sree Venkateswara High School, Visakhapatnam.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+ <!--------------------------services------------------>
+ <div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+        <div>
+            <i class="fa-solid fa-database"></i>  <!--need to check the icons are not working-->
+            <h2> DataBase Development</h2>
+            <p>A Database Developer (DB Developer) is responsible for designing, implementing, and maintaining database systems to store, manage, and retrieve data efficiently. 
+                They work with databases like MySQL, PostgreSQL, SQL Server, Oracle.</p>
+            <a href="#">Learn More</a>
+        </div>
+        <div>
+            <i class="fa-solid fa-minimize"></i>  <!--need to check the icons are not working-->
+            <h2> Data Migration</h2>
+            <p>Data migration is the process of transferring data from one system, storage, or format to another while ensuring data integrity, consistency, and minimal downtime.</p>
+            <a href="#">Learn More</a>
+        </div>
+        <div>
+            <i class="fa-solid fa-eye"></i>  <!--need to check the icons are not working-->
+            <h2> Optimization Techniques</h2>
+            <p>Optimization techniques are strategies used to enhance the performance, efficiency, and speed of systems, processes, or queries by minimizing resource usage and maximizing output.</p>
+            <a href="#">Learn More</a>
+        </div>
+
+        </div>
+    </div>
+ </div>
+
+<!---------------------------portfolio-------------------------------------->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title"> My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work 1.png" style="width: 250px; height: 125px;">   <!---need check the images are not showing on the screen-->
+                <div class="layer">
+                  <!--  <h3>Block Stack Pvt Ltd</h3>  -->
+                    <p>Write efficient SQL queries to retrieve data quickly and accurately.
+                        Plan and execute data migration strategies from existing databases to PostgreSQL.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>  <!---need check the icons are not showing on the screen for all-->
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work_2.jpg" style="width: 250px; height: 125px;">
+                <div class="layer">
+                   <!---- <h3>Flipkart Business Corps</h3> -->
+                    <p>Enhancement of script with new business logic into the existing on old script. 
+                        Migrating DB objects from SQL to Hive int FDP (Flipkart Data Portal). </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>  <!--need to check the icons are not working-->
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work_3.jpg" style="width: 250px; height: 125px;">
+                <div class="layer">
+                  <!--  <h3>Azentio</h3> -->
+                    <p> AMLock typically involves monitoring financial transactions in real-time to detect any irregular patterns that could indicate money laundering.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>  <!--need to check the icons are not working-->
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work_05.png" style="width: 250px; height: 125px;">
+                <div class="layer">
+                 <!---   <h3>Wipro Technology</h3> -->
+                    <p> Writing Jobs, using utl_file package for generating reports. Used schedule jobs for generating reports (Daily, Monthly, Yearly). 
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>  <!--need to check the icons are not working-->
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work_4.jpeg" style="width: 250px; height: 125px;">
+                <div class="layer">
+                  <!--  <h3>Conduent Business Solution LLP</h3>  -->
+                    <p>Processing the health care claims of US based insurance company. 
+                        As per processing the health insurance claim and ensured into the workers compensation.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>  <!--need to check the icons are not working-->
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more </a>
+    </div>
+</div>
+<!---------------------------Contact-------------------------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i> raaz1161626@gmail.com</p> <!--need to check the icons are not working-->
+            <p><i class="fa-solid fa-phone-volume"></i> +91 7036449501</p>  <!--need to check the icons are not working-->
+            <div class="social-icons">
+                <!-- <a href=""><i class="fa-brands fa-facebook"></i></a> -->
+                <!-- <a href=""><i class="fa-brands fa-instagram"></i></a> -->
+                <!-- <a href=""><i class="fa-brands fa-twitter-square"></i></a> -->
+                <a href="linkedin.com/in/raj-kumar-bb582730a"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <a href="images/BlockStake with 4+yrs exp Complete.pdf" download class="btn btn2">Download CV</a>
+            </div> 
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="your name" required>
+                    <input type="email" name="Email" placeholder="your email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg">Message sent successfully</span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Raj. Made with Passion by Easy Job seeker</p>   <!--need to check the icons are not working-->
+    </div>
+</div>
+
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbymUDlfOHJJDmtzEOAmH4pqn-dmXeldMr1IrwiLJY8zk7q17Icgt-PvJuZEm3wT64sL/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+	</body>
+</html>
