@@ -12,7 +12,8 @@
 	<div id="header">
         <div class="container">
             <nav>
-              <img src="images/port_logo.png" style="width: 200px; height: 200px;" class="logo"> <!----comment need to add logo image----> 
+              <!-- <img src="images/port_logo.png" style="width: 200px; height: 200px;" class="logo"> --comment need to add logo image-- -->
+              <img src="images/port_logo_refined.png" style="width: 250px; height: 250px; border: none; background: none;" class="logo">
                 <ul id="sidemenu">
                     <!--<li><a href="#" style="display: block; color: rgb(0, 0, 0);"><b>Home</b></a></li> -->
                     <li><a href="#header"><b>Home</b></a></li> 
@@ -84,23 +85,32 @@
         <h1 class="sub-title">My Services</h1>
         <div class="services-list">
         <div>
-            <i class="fa-solid fa-database"></i>  <!--need to check the icons are not working-->
+            <img src="images/database.svg" style="width: 80px; height: 80px;">
+            <!-- <i class="fa-solid fa-database"></i>  need to check the icons are not working -->
             <h2> DataBase Development</h2>
             <p>A Database Developer (DB Developer) is responsible for designing, implementing, and maintaining database systems to store, manage, and retrieve data efficiently. 
                 They work with databases like MySQL, PostgreSQL, SQL Server, Oracle.</p>
-            <a href="#">Learn More</a>
+                <a href="#" style="text-decoration: none; border-bottom: 2px solid black;" onmouseover="this.style.borderBottomColor='#ff004f';" onmouseout="this.style.borderBottomColor='black';">
+                    Learn More..
+                </a>
         </div>
         <div>
-            <i class="fa-solid fa-minimize"></i>  <!--need to check the icons are not working-->
+            <img src="images/migration.svg" style="width: 80px; height: 80px;">  <!--need to check the icons are not working-->
             <h2> Data Migration</h2>
             <p>Data migration is the process of transferring data from one system, storage, or format to another while ensuring data integrity, consistency, and minimal downtime.</p>
-            <a href="#">Learn More</a>
+            <a href="#" style="text-decoration: none; border-bottom: 2px solid black;" onmouseover="this.style.borderBottomColor='#ff004f';" onmouseout="this.style.borderBottomColor='black';">
+                Learn More..
+            </a>
         </div>
         <div>
-            <i class="fa-solid fa-eye"></i>  <!--need to check the icons are not working-->
+            <img src="images/funnel-outline.svg" style="width: 80px; height: 80px;">  <!--need to check the icons are not working-->
             <h2> Optimization Techniques</h2>
             <p>Optimization techniques are strategies used to enhance the performance, efficiency, and speed of systems, processes, or queries by minimizing resource usage and maximizing output.</p>
-            <a href="#">Learn More</a>
+            <!-- <a href="#">Learn More..</a> -->
+            <a href="#" style="text-decoration: none; border-bottom: 2px solid black;" onmouseover="this.style.borderBottomColor='#ff004f';" onmouseout="this.style.borderBottomColor='black';">
+                Learn More..
+            </a>
+           
         </div>
 
         </div>
@@ -167,16 +177,20 @@
     <div class="container">
         <div class="row">
             <div class="contact-left">
-            <h1 class="sub-title">Contact Me</h1>
-            <p><i class="fa-solid fa-paper-plane"></i> raaz1161626@gmail.com</p> <!--need to check the icons are not working-->
-            <p><i class="fa-solid fa-phone-volume"></i> +91 7036449501</p>  <!--need to check the icons are not working-->
+                <h1 class="sub-title"><u style="text-decoration-color: #ff004f;">Contact Me</u></h1>
+            <p><img src="images/send.svg" style="width: 25px; height: 25px; display: inline-block; vertical-align: bottom; margin-right: 10px;">
+                raaz1161626@gmail.com </p>
+            <!-- <p><img src="images/linkedin.svg" style="width: 80px; height: 80px;">raaz1161626@gmail.com</p> need to check the icons are not working -->
+            <p><img src="images/phone-call.svg" style="width: 25px; height: 25px;"> +91 7036449501</p>  <!--need to check the icons are not working-->
             <div class="social-icons">
-                <!-- <a href=""><i class="fa-brands fa-facebook"></i></a> -->
-                <!-- <a href=""><i class="fa-brands fa-instagram"></i></a> -->
-                <!-- <a href=""><i class="fa-brands fa-twitter-square"></i></a> -->
-                <a href="linkedin.com/in/raj-kumar-bb582730a"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" onclick="alert('Service is not Available'); return false;"><img src="images/facebook.svg" style="width: 25px; height: 25px;"></a>
+                <a href="#" onclick="alert('Service is not Available'); return false;"><img src="images/instagram.svg" style="width: 25px; height: 25px;"></a>
+                <!-- <a href=""><img src="images/twitter.svg" style="width: 25px; height: 25px;"></a> -->
+                <a href="#" onclick="alert('Service is not Available'); return false;"><img src="images/twitter.svg" style="width: 25px; height: 25px;"></a>                  
+                <a href="https://www.linkedin.com/in/raj-kumar-bb582730a/"><img src="images/linkedin.svg" style="width: 25px; height: 25px;"></a>
             </div>
-            <a href="images/BlockStake with 4+yrs exp Complete.pdf" download class="btn btn2">Download CV</a>
+            <a href="images/BlockStake with 4+yrs exp Complete.pdf" download class="btn btn2">Download CV   <img src="images/download.svg" style="width: 25px; height: 25px;display: inline-block; vertical-align: bottom; filter: invert(1) brightness(0) contrast(100%);">
+            </a>
             </div> 
             <div class="contact-right">
                 <form name="submit-to-google-sheet">
@@ -185,12 +199,14 @@
                     <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
                     <button type="submit" class="btn btn2">Submit</button>
                 </form>
-                <span id="msg">Message sent successfully</span>
+                <!-- <span id="msg">Message sent successfully</span> -->
+                <!-- <button id="submit-btn" type="button">Submit</button> -->
+                <span id="msg" style="display: none;">Message sent successfully</span>
             </div>
         </div>
     </div>
     <div class="copyright">
-        <p>Copyright © Raj. Made with Passion by Easy Job seeker</p>   <!--need to check the icons are not working-->
+        <p>Copyright © Raj. Made with Passion by Easy Job seeker</p>   
     </div>
 </div>
 
@@ -226,7 +242,7 @@
     }
 </script>
 
-<script>
+ <!-- <script>
     const scriptURL = 'https://script.google.com/macros/s/AKfycbymUDlfOHJJDmtzEOAmH4pqn-dmXeldMr1IrwiLJY8zk7q17Icgt-PvJuZEm3wT64sL/exec'
     const form = document.forms['submit-to-google-sheet']
     const msg = document.getElementById("msg")
@@ -243,6 +259,41 @@
         })
         .catch(error => console.error('Error!', error.message))
     })
-  </script>
+  </script>  -->
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbymUDlfOHJJDmtzEOAmH4pqn-dmXeldMr1IrwiLJY8zk7q17Icgt-PvJuZEm3wT64sL/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.style.display = "inline";  // Show the message
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.style.display = "none";  // Hide the message after 0.5 seconds
+            }, 4000)  // 500 milliseconds (0.5 seconds)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+
+
+
+
+<!-- <script>
+    document.getElementById("submit-btn").addEventListener("click", function() {
+    // Show the message
+    var msg = document.getElementById("msg");
+    msg.style.display = "inline";  // Or "block", depending on your layout
+
+    // Hide the message after 0.5 seconds
+    setTimeout(function() {
+        msg.style.display = "none";
+    }, 500); // 500ms = 0.5s
+});
+</script> -->
 	</body>
 </html>
